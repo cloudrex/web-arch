@@ -1,10 +1,11 @@
-.inspector-item {
+.layout-item {
     padding: 0.5em 1em;
     color: var(--color-white);
     text-align: left;
     transition: background-color 0.15s ease;
+    cursor: move;
 }
 
-.inspector-item:hover {
+.layout-item:hover {
     background-color: var(--color-dark-lighter);
 }

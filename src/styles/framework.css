@@ -1,4 +1,4 @@
-.inspector {
+.pane {
+    color: var(--color-white);
     background-color: var(--color-dark-light);
-    height: 100%;
 }
