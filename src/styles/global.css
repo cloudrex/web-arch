@@ -1,0 +1,24 @@
+:root {
+    --color-dark: #333;
+    --color-dark-light: #444;
+    --color-dark-lighter: #666;
+    --color-white: #fff;
+}
+
+* {
+    outline: none;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    user-select: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--color-dark);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
