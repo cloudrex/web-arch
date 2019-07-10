@@ -9,4 +9,6 @@
 .canvas .heading {
     font-weight: normal;
     color: var(--color-dark-lighter);
+    text-align: center;
+    font-size: 1.6em;
 }
