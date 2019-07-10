@@ -1,4 +1,5 @@
 import React, {ReactNode} from "react";
+import {Callback} from "../index";
 
 export enum ButtonColor {
     Green = "green",
@@ -10,13 +11,19 @@ interface IProps {
     readonly color?: ButtonColor;
 
     readonly disabled?: boolean;
+
+    readonly processingState?: ReactNode;
+
+    readonly processing?: boolean;
+
+    readonly onClick?: Callback;
 }
 
 class Button extends React.Component<IProps> {
     protected getClassNames(): string | undefined {
         const classes: string[] = [];
 
-        if (this.props.disabled) {
+        if (this.props.disabled || this.props.processing) {
             classes.push("disabled");
         }
 
@@ -27,10 +34,24 @@ class Button extends React.Component<IProps> {
         return classes.length > 0 ? classes.join(" ") : undefined;
     }
 
+    protected renderChildren(): ReactNode {
+        if (this.props.processing) {
+            return this.props.processingState;
+        }
+
+        return this.props.children;
+    }
+
+    protected handleClick(): void {
+        if (this.props.onClick) {
+            this.props.onClick();
+        }
+    }
+
     public render(): ReactNode {
         return (
-            <button className={this.getClassNames()}>
-                {this.props.children}
+            <button onClick={() => this.handleClick()} className={this.getClassNames()}>
+                {this.renderChildren()}
             </button>
         );
     }

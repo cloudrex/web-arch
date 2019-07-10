@@ -1,3 +1,9 @@
+@keyframes spin {
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
 :root {
     --color-dark: #333;
     --color-dark-light: #444;

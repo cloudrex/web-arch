@@ -1,0 +1,6 @@
+.loader {
+    display: inline-block;
+    transform-origin: center;
+    animation: spin 1s ease infinite;
+    color: var(--color-white);
+}

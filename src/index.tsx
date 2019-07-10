@@ -5,6 +5,8 @@ import "./styles/framework.css";
 import App from "./components/app";
 import * as serviceWorker from "./serviceWorker";
 
+export type Callback = (...args: any[]) => void;
+
 ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
