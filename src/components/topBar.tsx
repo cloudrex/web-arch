@@ -2,7 +2,7 @@ import React, {ReactNode} from "react";
 import "../styles/topBar.css";
 import Button, {ButtonColor} from "./button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCloudUploadAlt, faEye} from "@fortawesome/free-solid-svg-icons";
+import {faCloudUploadAlt, faEye, faFileExport, faExternalLinkSquareAlt, faFileArchive, faArrowAltCircleDown, faDownload} from "@fortawesome/free-solid-svg-icons";
 import Loader from "./loader";
 import Select from "react-select";
 
@@ -41,11 +41,12 @@ class TopBar extends React.Component<{}, IState> {
                     <Button><FontAwesomeIcon icon={faEye} /> Preview</Button>
                 </div>
                 <div className="h-group">
+                    <Button><FontAwesomeIcon icon={faDownload} /> Export Project</Button>
                     <Select value={testOptions[0]} className="select" options={testOptions} />
                     <Button onClick={() => this.publish()} processing={this.state.publishing} color={ButtonColor.Green} processingState={
                         <>
                             <Loader /> Publishing
-                    </>
+                        </>
                     }><FontAwesomeIcon icon={faCloudUploadAlt} /> Publish</Button>
                 </div>
             </div>
