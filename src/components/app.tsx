@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "./layout";
 import "../styles/app.css";
-import TopBar from "./topBar";
+import TopBar from "./actionBar";
 import Canvas from "./canvas";
 import Sidebar from "./sidebar";
 import StatusBar from "./statusBar";

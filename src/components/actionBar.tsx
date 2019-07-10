@@ -1,8 +1,8 @@
 import React, {ReactNode} from "react";
-import "../styles/topBar.css";
+import "../styles/actionBar.css";
 import Button, {ButtonColor} from "./button";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faCloudUploadAlt, faEye, faFileExport, faExternalLinkSquareAlt, faFileArchive, faArrowAltCircleDown, faDownload} from "@fortawesome/free-solid-svg-icons";
+import {faCloudUploadAlt, faEye, faDownload} from "@fortawesome/free-solid-svg-icons";
 import Loader from "./loader";
 import Select from "react-select";
 

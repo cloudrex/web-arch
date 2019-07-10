@@ -1,11 +1,11 @@
-.top-bar {
+.action-bar {
     grid-column: 2;
     text-align: right;
     padding: 0.7em 1em;
     border-bottom: 1px solid var(--color-black);
 }
 
-.top-bar button:not(:last-child),
-.top-bar .select:not(:last-child) {
+.action-bar button:not(:last-child),
+.action-bar .select:not(:last-child) {
     margin-right: 8px;
 }
