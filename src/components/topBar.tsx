@@ -43,11 +43,14 @@ class TopBar extends React.Component<{}, IState> {
                 <div className="h-group">
                     <Button><FontAwesomeIcon icon={faDownload} /> Export Project</Button>
                     <Select value={testOptions[0]} className="select" options={testOptions} />
-                    <Button onClick={() => this.publish()} processing={this.state.publishing} color={ButtonColor.Green} processingState={
-                        <>
-                            <Loader /> Publishing
-                        </>
-                    }><FontAwesomeIcon icon={faCloudUploadAlt} /> Publish</Button>
+                    <Button
+                        onClick={() => this.publish()}
+                        processing={this.state.publishing}
+                        color={ButtonColor.Green}
+                        processingState={<Loader text="Publishing" />}
+                    >
+                        <FontAwesomeIcon icon={faCloudUploadAlt} /> Publish
+                    </Button>
                 </div>
             </div>
         );

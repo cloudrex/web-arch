@@ -46,7 +46,7 @@ button {
     border: 1px solid var(--color-black);
     background-color: var(--color-dark-lighter);
     color: var(--color-white);
-    padding: 0.5em 1.3em;
+    padding: 0.45em 1.2em;
     border-radius: 4px;
     cursor: pointer;
     text-align: center;
@@ -80,6 +80,12 @@ h1, h2, h3, h4, h5, h6 {
     text-align: left;
 }
 
+/* Select -> Wrapper */
+.select > .css-yk16xz-control {
+    padding: 0.5em 1.2em;
+    height: 100%;
+}
+
 .select > .css-yk16xz-control,
 .select > .css-1pahdxg-control {
     background-color: var(--color-dark-lighter) !important;
@@ -94,4 +100,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .select .css-1uccc91-singleValue {
     color: inherit;
+}
+
+/* Select -> Span */
+.select .css-w8afj7-Input {
+    margin: 0;
+    height: 1em;
+}
+
+/* Select -> Value Wrap */
+.select .css-1hwfws3 {
+    padding: 0;
+}
+
+/* Select -> Arrow */
+.select .css-tlfecz-indicatorContainer {
+    padding: 0 0.5em;
 }
