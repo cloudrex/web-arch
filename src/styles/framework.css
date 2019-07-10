@@ -44,3 +44,7 @@
 .txt-left {
     text-align: left;
 }
+
+.flex-expand {
+    flex: 1;
+}
