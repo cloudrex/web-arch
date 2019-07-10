@@ -4,6 +4,8 @@ import SidebarItem from "./sidebarItem";
 import {faPlus, faDatabase, faCog, faSubscript, faQuestion, faCloud, faBox} from "@fortawesome/free-solid-svg-icons";
 import ToolsFigure from "../assets/tools.png";
 import SidePanel from "./sidePanel";
+import {Query} from "react-apollo";
+import {FETCH_ITEMS} from "../queries";
 
 const Sidebar: React.FC = () => {
     return (
@@ -21,7 +23,23 @@ const Sidebar: React.FC = () => {
                 <SidebarItem disabled name="Help (Unavailable)" icon={faQuestion} />
             </div>
             <SidePanel label="Collection">
-                test
+                <Query query={FETCH_ITEMS}>
+                    {({ data, loading, error }) => {
+                        if (loading) {
+                            return "Loading...";
+                        }
+
+                        if (error) {
+                            return "Error!";
+                        }
+
+                        return (
+                            <div>
+                                It's loaded!
+                            </div>
+                        );
+                    }}
+                </Query>
             </SidePanel>
         </div>
     );

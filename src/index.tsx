@@ -11,7 +11,7 @@ export type Callback = (...args: any[]) => void;
 
 // Create the Apollo GraphQL client.
 const client = new ApolloClient({
-    uri: "https://48p1r2roz4.sse.codesandbox.io"
+    uri: "http://localhost:4000/"
 });
 
 ReactDOM.render((
@@ -19,18 +19,6 @@ ReactDOM.render((
         <App />
     </ApolloProvider>
 ), document.getElementById("root"));
-
-client.query({
-    query: gql`
-        {
-            rates(currency: "USD") {
-                currency
-            }
-        }
-    `
-}).then((result) => {
-    console.log(result);
-});
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
