@@ -4,6 +4,8 @@ import "../styles/app.css";
 import TopBar from "./topBar";
 import Canvas from "./canvas";
 import Sidebar from "./sidebar";
+import StatusBar from "./statusBar";
+import Inspector from "./inspector";
 
 const App: React.FC = () => {
     return (
@@ -13,7 +15,9 @@ const App: React.FC = () => {
             <div className="content-wrap">
                 <Layout />
                 <Canvas />
+                <Inspector />
             </div>
+            <StatusBar />
         </div>
     );
 }

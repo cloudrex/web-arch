@@ -2,14 +2,17 @@
     --color-dark: #333;
     --color-dark-light: #444;
     --color-dark-lighter: #666;
-    --color-white: #fff;
+    --color-dark-text: #868686;
+    --color-white: #eee;
     --color-black: #222;
     --color-green: #2ecc71;
     --color-blue: #3498db;
+    --color-dark-text-gray: #aaa;
 }
 
 * {
     outline: none;
+    box-sizing: border-box;
 }
 
 html, body, #root {
@@ -17,7 +20,6 @@ html, body, #root {
 }
 
 body {
-    box-sizing: border-box;
     user-select: none;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     background-color: var(--color-dark);
@@ -27,9 +29,7 @@ body {
 }
 
 body *.disabled {
-    cursor: not-allowed;
-    opacity: 0.8;
-    filter: grayscale(100%);
+    cursor: not-allowed !important;
 }
 
 #root {
@@ -57,4 +57,8 @@ button.green {
 
 button.blue {
     background-color: var(--color-blue);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
 }

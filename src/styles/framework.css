@@ -2,3 +2,45 @@
     color: var(--color-white);
     background-color: var(--color-dark-light);
 }
+
+.pane > .pane-label {
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    color: var(--color-dark-text);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expand {
+    width: 100%;
+    height: 100%;
+}
+
+.v-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.h-group {
+    display: flex;
+    flex-direction: row;
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-right {
+    text-align: right;
+}
+
+.txt-left {
+    text-align: left;
+}

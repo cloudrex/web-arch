@@ -1,3 +1,20 @@
 .sidebar-item {
-    
+    background-color: var(--color-dark-lighter);
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.sidebar-item:hover {
+    background-color: var(--color-white);
+    color: var(--color-dark-lighter);
+}
+
+.sidebar-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.sidebar-item.logo {
+    background-color: #fff;
 }

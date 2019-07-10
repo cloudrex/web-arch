@@ -1,0 +1,49 @@
+.inspector {
+    border-left: 1px solid var(--color-black);
+}
+
+.inspector > .group:nth-child(2) {
+    padding-top: 0;
+}
+
+.inspector > .group {
+    padding: 1em 0.7em;
+}
+
+.inspector > .group.disabled {
+    opacity: 0.7;
+}
+
+.inspector > .spacing-controls .control {
+    text-align: center;
+    background-color: var(--color-dark-lighter);
+}
+
+.inspector > .spacing-controls .control.h-bar {
+    width: 100%;
+    padding: 0.5em 0;
+    opacity: 0.5;
+}
+
+.inspector > .spacing-controls .control.v-bar {
+    flex: 1;
+}
+
+.inspector > .spacing-controls .control.v-bar.center {
+    background: none;
+    flex: 2;
+}
+
+/* Spacing controls -> Directions */
+.inspector > .spacing-controls .control.h-arrow {
+    cursor: e-resize;
+}
+
+.inspector > .spacing-controls .control.v-arrow {
+    cursor: n-resize;
+}
+
+/* Inspector -> Group */
+.inspector > .group {
+    border-bottom: 1px solid var(--color-black);
+}

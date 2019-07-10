@@ -1,11 +1,15 @@
 .layout-item {
-    padding: 0.5em 1em;
+    padding: 0.3em 1em;
     color: var(--color-white);
     text-align: left;
-    transition: background-color 0.15s ease;
     cursor: move;
 }
 
 .layout-item:hover {
     background-color: var(--color-dark-lighter);
+}
+
+.layout-item > svg {
+    margin-right: 3px;
+    color: var(--color-dark-text-gray);
 }
