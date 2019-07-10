@@ -7,7 +7,7 @@ export enum ButtonColor {
     Blue = "blue"
 }
 
-interface IProps {
+type Props = {
     readonly color?: ButtonColor;
 
     readonly disabled?: boolean;
@@ -17,9 +17,9 @@ interface IProps {
     readonly processing?: boolean;
 
     readonly onClick?: Callback;
-}
+};
 
-class Button extends React.Component<IProps> {
+class Button extends React.Component<Props> {
     protected getClassNames(): string | undefined {
         const classes: string[] = [];
 

@@ -10,13 +10,13 @@ interface IContentProps {
     readonly className?: string;
 }
 
-interface IProps {
+type Props = {
     readonly name: string;
 
     readonly icon: IconDefinition;
 
     readonly disabled?: boolean;
-}
+};
 
 const Content = forwardRef<{}, IContentProps>((props, ref: any) => (
     <div ref={ref} className={"sidebar-item flex-center" + (props.className ? " " + props.className : "")}>
@@ -24,7 +24,7 @@ const Content = forwardRef<{}, IContentProps>((props, ref: any) => (
     </div>
 ));
 
-class SidebarItem extends React.Component<IProps> {
+class SidebarItem extends React.Component<Props> {
     protected getClassNames(): string | undefined {
         const classes: string[] = [];
 

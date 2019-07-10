@@ -36,7 +36,7 @@ class TopBar extends React.Component<{}, IState> {
 
     public render(): ReactNode {
         return (
-            <div className="top-bar pane h-group">
+            <div className="action-bar pane h-group">
                 <div className="h-group flex-expand">
                     <Button><FontAwesomeIcon icon={faEye} /> Preview</Button>
                 </div>

@@ -1,4 +1,5 @@
 .sidebar {
+    position: relative;
     padding: 0.6em;
     grid-column: 1;
     grid-row: 1 / 3;

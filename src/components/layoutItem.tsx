@@ -3,14 +3,14 @@ import "../styles/layoutItem.css";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {IconDefinition, faCodeBranch} from "@fortawesome/free-solid-svg-icons";
 
-interface IProps {
+type Props = {
     readonly icon?: IconDefinition;
 
     readonly name: string;
-}
+};
 
-class LayoutItem extends React.Component<IProps> {
-    public static readonly defaultProps: Partial<IProps> = {
+class LayoutItem extends React.Component<Props> {
+    public static readonly defaultProps: Partial<Props> = {
         icon: faCodeBranch
     };
 

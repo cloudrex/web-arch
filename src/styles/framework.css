@@ -12,6 +12,10 @@
     margin-bottom: 10px;
 }
 
+.pane > .pane-label.no-pad {
+    padding: 0;
+}
+
 .flex-center {
     display: flex;
     justify-content: center;

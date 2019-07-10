@@ -3,6 +3,7 @@ import "../styles/sidebar.css";
 import SidebarItem from "./sidebarItem";
 import {faPlus, faDatabase, faCog, faSubscript, faQuestion, faCloud, faBox} from "@fortawesome/free-solid-svg-icons";
 import ToolsFigure from "../assets/tools.png";
+import SidePanel from "./sidePanel";
 
 const Sidebar: React.FC = () => {
     return (
@@ -19,6 +20,9 @@ const Sidebar: React.FC = () => {
                 <SidebarItem name="Settings" icon={faCog} />
                 <SidebarItem disabled name="Help (Unavailable)" icon={faQuestion} />
             </div>
+            <SidePanel label="Collection">
+                test
+            </SidePanel>
         </div>
     );
 }
